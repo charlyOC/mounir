@@ -1,0 +1,57 @@
+package main;
+
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class Main {
+
+	private void writePrice() {
+		
+		FileWriter writer = null;
+		try {
+			writer = new FileWriter("db.txt");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		try(PrintWriter printWriter =
+		    new PrintWriter(writer)){
+
+		    printWriter.write("coucou ");
+//		    printWriter.write((int)123);
+
+		}
+	}
+
+	public static void main(String[] args) {
+		
+		FileWriter writer = null;
+		try {
+			writer = new FileWriter("db.txt");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		try(PrintWriter printWriter =
+		    new PrintWriter(writer)){
+
+		    printWriter.write("burger ");
+		    printWriter.println(6); 
+		    printWriter.write("pizza");
+		    printWriter.println(9);
+		    printWriter.write("kebab");
+		    printWriter.print(6.50);
+		    
+		    
+
+		}
+		
+	}
+
+}

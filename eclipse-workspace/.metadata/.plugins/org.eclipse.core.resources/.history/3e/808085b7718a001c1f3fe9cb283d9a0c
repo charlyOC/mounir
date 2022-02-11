@@ -1,0 +1,19 @@
+package firstProject;
+
+public class Personne {
+	public String firstName; 
+	public String lastName;
+	public String sex; 
+	public int age;
+	public int height;
+	public int weight;
+	
+	public Personne(String Firstname, String Lastname, String Sex, int Age, int Weight, int Height) {
+		this.firstName = Firstname; 
+		this.lastName = Lastname; 
+		this.sex = Sex; 
+		this.age = Age; 
+		this.weight = W
+	}
+	
+}

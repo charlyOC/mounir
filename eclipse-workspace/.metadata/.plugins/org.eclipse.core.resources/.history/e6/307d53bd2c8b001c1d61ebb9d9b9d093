@@ -1,0 +1,22 @@
+package main;
+
+import beans.ReadDb;
+
+public class Main {
+
+    	
+	public static void main(String[] args) {
+		
+			ReadDb read = new ReadDb();
+			read.readDb();  
+			
+			
+			
+			
+		
+
+		
+		}
+		
+	}
+

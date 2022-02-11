@@ -1,0 +1,14 @@
+package beans;
+
+public class Product {
+	
+	private String desc;
+	private float price; 
+
+	public product(String Desc, float Price) {
+		this.desc = Desc; 
+		this.price = Price; 
+	}
+	
+
+}

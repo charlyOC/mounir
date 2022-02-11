@@ -1,0 +1,53 @@
+package main;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+import beans.Product;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		boolean isOrderDone = false;
+		String answerOrderDone; 
+		Map<String, Integer> listProduct = new HashMap<String, Integer>();
+
+		
+		do {
+			System.out.println("entrez un nom de produit:");
+			Product produit = new Product(null, 0);
+
+			produit.setDesc(sc.next());
+
+			System.out.println("entrez un prix:");
+			produit.setPrice(sc.nextInt());
+
+			System.out.println(produit.getDesc() + " " + produit.getPrice() + "€");
+
+			
+			listProduct.put(produit.getDesc(), produit.getPrice());
+			
+//			for (Map.Entry<String, Integer> entry : listProduct.entrySet()) {
+//	            System.out.println(entry.getKey() + " : " + entry.getValue() + " euros");
+//	        }
+			
+			for(int i=0; i<listProduct.size(); i++) {
+				System.out.println(listProduct.);
+			}
+			
+			System.out.println("est ce que t'as fini enculé ? Y/n");
+			answerOrderDone = sc.next();
+			
+			if(answerOrderDone.equals("Y")) {
+				isOrderDone = !isOrderDone;
+			} 
+			
+		} while (!isOrderDone);
+
+	}
+
+}

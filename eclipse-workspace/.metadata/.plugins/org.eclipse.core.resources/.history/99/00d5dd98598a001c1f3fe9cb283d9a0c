@@ -1,0 +1,12 @@
+package firstProject;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		String[] apprenants = new String[14];
+		
+		apprenants[0] = "ibrahim"; 
+		apprenants[1] = "charly"; 
+	}
+
+}

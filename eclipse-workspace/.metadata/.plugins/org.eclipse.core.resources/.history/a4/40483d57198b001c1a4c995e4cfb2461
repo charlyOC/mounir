@@ -1,0 +1,22 @@
+package main;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Main {
+
+	public static void main(String[] args) {
+		public void saveToFile(String json){
+			  try {
+			    File file = new File("beakerx_inspect.json");
+			    FileWriter fileWriter = new FileWriter(file);
+			    fileWriter.write(json);
+			    fileWriter.flush();
+			    fileWriter.close();
+			  } catch (IOException e) {
+			    e.printStackTrace();
+			  }
+	}
+
+}

@@ -1,0 +1,33 @@
+package beans;
+
+public class Product {
+	
+	private String desc;
+	private float price; 
+	private int quantity;
+
+	public Product(String Desc, float Price, int Quantity) {
+		this.desc = Desc; 
+		this.price = Price; 
+		this.quantity = Quantity; 
+	}
+
+	public String getDesc() {
+		return desc;
+	}
+
+	public void setDesc(String desc) {
+		this.desc = desc;
+	}
+
+	public float getPrice() {
+		return price;
+	}
+
+	public void setPrice(float price) {
+		this.price = price;
+	}
+	
+	
+
+}

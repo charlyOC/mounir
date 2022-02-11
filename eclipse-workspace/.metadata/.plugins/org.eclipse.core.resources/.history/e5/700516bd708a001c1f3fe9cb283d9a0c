@@ -1,0 +1,10 @@
+package firstProject;
+
+public class Personne {
+	public String firstName; 
+	public String lastName; 
+	public int name;
+	public int height;
+	public 
+	
+}

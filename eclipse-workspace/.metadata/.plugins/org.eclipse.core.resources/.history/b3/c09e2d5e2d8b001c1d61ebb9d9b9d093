@@ -1,0 +1,21 @@
+package main;
+
+import java.util.Scanner;
+
+import beans.Product;
+
+public class Main {
+
+    	
+	public static void main(String[] args) {
+		
+	    Scanner sc = new Scanner(System.in);
+	    System.out.println("entrez un nom de produit:"); 
+	    
+	    Product produit = new Product(); 
+	    
+	    
+		}
+		
+	}
+

@@ -1,0 +1,6 @@
+package beans;
+
+public class Pizza {
+	private String name; 
+	private float price;
+}

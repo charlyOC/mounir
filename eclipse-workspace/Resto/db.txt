@@ -1,0 +1,3 @@
+burger 6
+pizza 9
+kebab 6.5

@@ -1,0 +1,43 @@
+package main;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+import beans.Product;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		boolean isOrderDone = false;
+		String answerOrderDone; 
+
+		
+		do {
+			System.out.println("entrez un nom de produit:");
+			Product produit = new Product(null, 0);
+
+			produit.setDesc(sc.nextLine());
+
+			System.out.println("entrez un prix:");
+			produit.setPrice(sc.nextInt());
+
+			System.out.println(produit.getDesc() + " " + produit.getPrice() + "€");
+
+			HashMap<String, Integer> map = new HashMap<>();
+			map.put(produit.getDesc(), produit.getPrice());
+			
+			System.out.println("est ce que t'as fini enculé ? Y/n");
+			answerOrderDone = sc.next();
+			
+			if(answerOrderDone == "Y") {
+				isOrderDone = !isOrderDone;
+			} 
+			
+		} while (isOrderDone);
+
+	}
+
+}
